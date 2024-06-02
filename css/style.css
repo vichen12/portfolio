@@ -6,10 +6,11 @@ body, html {
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    cursor: default;
 }
 
 header {
-    /background-image:  loading="lazy" url('../img/background-4798051_1280.jpg');/
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
@@ -91,7 +92,7 @@ header {
 }
 
 
-/------------------FIN DEL HEADER-----------------------------/
+/*------------------FIN DEL HEADER-----------------------------*/
 
 
 .hero {
@@ -472,6 +473,98 @@ header {
 }
 
 
+
 .experiencia{
-    background-color: rgba(52,53,58,255);
+    background-color: rgba(61,62,66,255);
+    display: flex;
+    flex-direction: column;
+    margin: 4% 0px 0% 0%;
+    padding: 0%;
 }
+.experiencia h1{
+    color: #fff;
+    font-size: 60px;
+    margin: -40px 0px 0% 7%;
+}
+.experiencia h1:hover{
+    color: #c49f31;
+    transition: 0.5s;
+    transform:scale(1.05);
+}
+
+
+
+.tiempo{
+    margin-top: 10%;
+    display: flex;
+    margin: 3% 7% 3% 17%;
+}
+
+.tiempo h2 {
+    margin: 10px 0 5px 7%;
+    font-size: 45px;
+}
+.tiempo h2:hover {
+    color: #c49f31;
+    transform:scale(1.05);
+    transition: 0.5s;
+}
+
+.tiempo h3 {
+    margin: 4% 0 2% 7%;
+    font-size: 44px;
+    color: #ccc;
+}
+.tiempo h3:hover {
+    color: #c49f31;
+    transform:scale(1.05);
+    transition: 0.5s;
+}
+
+.tiempo p {
+    margin: 0 7% 20px 7%;
+    line-height: 1.6;
+    font-size: 20px;
+}
+
+
+
+.linea{
+    display: flex;
+    align-items: start;
+}
+
+.linea h4 {
+    margin: 0px 20px 10px 10%;
+    font-size: 30px;
+    padding: 5px 25px; 
+    background-color: rgba(92, 93, 96, 255);
+    color: white;
+    clip-path: polygon(0 0, 80% 0, 100% 50%, 80% 100%, 0 100%);
+    display: inline-block;
+}
+
+
+.punto{
+    margin: 0px 0px 100px 3%;
+    position: relative;
+    width: 50px;
+    height: 40px;
+    box-shadow: 0px 0px 30px 10px rgba(129, 103, 45, 0.8);
+    background-color: rgba(240,191,108,255);
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+
+.punto::before {
+    content: '';
+    width: 2px;
+    height: 280px;
+    position: absolute;
+    top: 200%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(255, 255, 255);
+}
+
