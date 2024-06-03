@@ -2,14 +2,14 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" type="image/jpeg" href="../imagenes/logo-yu.jpg">
+    <link rel="icon" type="image/jpg" href="./img/LOGO.jpeg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>DPW 2024</title>
+    <title>PORTFOLIO VINCENZO</title>
     <meta name="tp1" content="aqui veremos el contenido del tp1">
     <script src="https://kit.fontawesome.com/4e0261060c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
     </head>
     <body>
         <header>
@@ -18,11 +18,19 @@
                     <div class="logo">
                         <img class="logo" src="./img/LOGO.jpeg" alt="Logo">
                     </div>
-                    <ul>
-                        <li class="guia"><a href="#about">About</a></li>
-                        <li class="guia"><a href="#port">Portfolio</a></li>
-                        <li class="guia"><a href="#">Contact</a></li>
-                    </ul>
+                    <input type="checkbox" id="check">
+                    <label for="check" class="mostrar-menu">
+                        &#9776;
+                    </label>
+                    <nav class="guia">
+                        <a href="#about">About</a>
+                        <a href="#port">Portfolio</a>
+                        <a href="#">Contact</a>
+                        <label for="check" class="esconder-menu">
+                            &#215
+                        </label>
+                    </nav>
+            
                     <div class="search">
                         <input type="text" placeholder="Search">
                         <i class="fa-solid fa-magnifying-glass"></i>

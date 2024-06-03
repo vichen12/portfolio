@@ -30,6 +30,14 @@ header {
     justify-content: space-around;
 }
 
+.guia{
+    display: flex;
+    gap: 40%;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
 .logo img {
     height: 40px;
     margin: 0px;
@@ -38,7 +46,7 @@ header {
  
 }
 
-.direct ul {
+.direct a {
     list-style: none;
     display: flex;
     gap: 30%;
@@ -46,30 +54,31 @@ header {
 }
 
 
-.direct li a {
+.direct a {
     color: #ccc;
     text-decoration: none;
     font-size: 30px;
 }
 
-.direct li a:hover {
+.direct a:hover {
     color: gold;
-}
-.guia:hover {
     color: gold;
     transition: 0.9s;
     transform: translate(0px,-15px) scale(1.4);
 }
 
+
 .search {
-    position: relative;
+    position: a;
     display: flex;
     align-items: center;
     margin: 0px 10%;
+    position: relative;
 }
 
 .search input {
     width: 100%;
+    
     padding: 10px 0px 5px 10px;
     font-size: 16px;
     border-radius:10px ;
@@ -90,6 +99,14 @@ header {
     color: gold; 
     
 }
+.mostrar-menu,
+.esconder-menu {
+    display: none;
+}
+
+#check {
+    display: none;
+}
 
 
 /*------------------FIN DEL HEADER-----------------------------*/
@@ -107,6 +124,7 @@ header {
 
 .hero h1 span {
     color: #f5c31f;
+    margin-right: 25%;
 }
 
 .hero p {
@@ -153,7 +171,6 @@ header {
     background: rgba(0, 0, 0, 0.5);
     z-index: 1;
 }
-
 .sidebar  {
     position: absolute;
     right: 15%;
@@ -184,6 +201,8 @@ header {
     color: gold;
     transform: scale(1.8);
 }
+
+
 
 
 
@@ -324,22 +343,7 @@ header {
   
 
 
-  .dots {
-    position: absolute;
-    left: 76%;
-    display: grid;
-    grid-template-columns: repeat(4, 60px); 
-    grid-template-rows: repeat(4, 100px);
-    gap: 20px; 
-    margin-top: -160px;
-  }
-  
-  .dot {
-    width: 20px;
-    height: 20px;
-    background-color: rgba(106,94,75,255);
-    border-radius: 100%;
-  }
+
   
 
 
@@ -582,24 +586,7 @@ header {
 
 /*---------------TESTIMONIO----------------------------------*/
 
-.dits {
-    position: absolute;
-    display: grid;
-    grid-template-columns: repeat(3, 60px); 
-    grid-template-rows: repeat(3, 100px);
-    gap: 20px; 
-    margin-top: 20px;
-    margin-left: 10px;
-    z-index: 1;
-  }
-  
-  .dit {
-    width: 20px;
-    height: 20px;
-    background-color: rgba(106,94,75,255);
-    border-radius: 100%;
-    z-index: 1;
-  }
+
 
 
 
@@ -891,3 +878,5 @@ footer {
     color: rgba(244, 193, 108, 255);
     font-size: 50px;
 }
+
+
