@@ -10,9 +10,9 @@ body, html {
     cursor: default;
 }
 
-
 header {
-    background-color: rgba(52, 53, 58, 255);
+    background-color: rgba(52, 53, 58, 1);
+    background-image: url(../img/luxa.org-opacity-changed-Foto_header.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
@@ -20,22 +20,27 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 20px; 
+    padding: 20px;
+    position: relative;
+    background-position: right 24% ; 
+
 }
+
+
 
 
 .direct {
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     align-items: center;
     width: 100%;
 }
 
-/* Logo */
+
 .logo img {
     height: 40px;
     margin: 0;
-    padding: 10px; /* Ajustar padding para mejor alineación */
+    padding: 10px;
     border-radius: 50%;
 }
 
@@ -44,13 +49,13 @@ header {
     display: flex;
     gap: 30px;
     align-items: center;
-    margin: auto; 
+    margin: auto;
 }
 
 .guia a {
     color: #ccc;
     text-decoration: none;
-    font-size: 40px; 
+    font-size: 40px;
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
@@ -67,6 +72,39 @@ header {
 #check {
     display: none;
 }
+
+
+.sidebar {
+    position: absolute;
+    right: 10%; 
+    top: 50%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    height: 100%; 
+    z-index: 1;
+}
+
+.sidebar::before {
+    content: '';
+    width: 2px;
+    height: 100px;
+    background-color: gold;
+}
+
+.social-icon {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    transition: color 0.3s, transform 0.5s;
+}
+
+.sidebar a:hover {
+    color: gold;
+    transform: scale(1.8);
+}
+
 
 /*
 .search {
@@ -168,36 +206,6 @@ header {
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
     z-index: 1;
-}
-.sidebar  {
-    position: absolute;
-    right: 15%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    bottom: 5%;
-    z-index: 1;
-
-}
-
-.sidebar::before {
-    content: '';
-    width: 2px;
-    height: 100px;
-    background-color: gold;
-}
-
-.social-icon {
-    text-decoration: none;
-    color: white;
-    font-size: 24px;
-    transition: color 0.3s, transform 0.5s;
-}
-
-.sidebar a:hover {
-    color: gold;
-    transform: scale(1.8);
 }
 
 
