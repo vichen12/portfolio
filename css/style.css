@@ -10,7 +10,9 @@ body, html {
     cursor: default;
 }
 
+
 header {
+    background-color: rgba(52, 53, 58, 255);
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
@@ -18,56 +20,55 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: rgba(52,53,58,255);
+    padding: 20px; 
 }
 
 
 .direct {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; 
     align-items: center;
-    position: relative;
-    justify-content: space-around;
+    width: 100%;
 }
 
-.guia{
-    display: flex;
-    gap: 40%;
-    justify-content: space-between;
-    align-items: center;
-
-}
-
+/* Logo */
 .logo img {
     height: 40px;
-    margin: 0px;
-    padding: 50px;
-    border-radius: 300px;
- 
+    margin: 0;
+    padding: 10px; /* Ajustar padding para mejor alineación */
+    border-radius: 50%;
 }
 
-.direct a {
-    list-style: none;
+
+.guia {
     display: flex;
-    gap: 30%;
-    font-size: 30px;
+    gap: 30px;
+    align-items: center;
+    margin: auto; 
 }
 
-
-.direct a {
+.guia a {
     color: #ccc;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 40px; 
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
-.direct a:hover {
+.guia a:hover {
     color: gold;
-    color: gold;
-    transition: 0.9s;
-    transform: translate(0px,-15px) scale(1.4);
+    transform: translateY(-5px) scale(1.2);
 }
 
+.mostrar-menu,
+.esconder-menu {
+    display: none;
+}
 
+#check {
+    display: none;
+}
+
+/*
 .search {
     position: a;
     display: flex;
@@ -99,22 +100,16 @@ header {
     color: gold; 
     
 }
-.mostrar-menu,
-.esconder-menu {
-    display: none;
-}
-
-#check {
-    display: none;
-}
+*/
 
 
-/*------------------FIN DEL HEADER-----------------------------*/
+
+
 
 
 .hero {
     position: relative;
-    margin: 0% 10%;
+    margin: 10% 10% 30% 10%;
     display: block;
 }
 
@@ -128,6 +123,9 @@ header {
 }
 
 .hero p {
+    font-size: 50px;
+}
+.hero strong{
     font-size: 50px;
 }
 
@@ -271,11 +269,12 @@ header {
     text-align: center;
     display: grid;
     z-index: 1000;
+    
 }
 
 #skills h1 {
     text-align: center;
-    margin-top: 0;
+    margin: 10%;
     font-size: 50px;
 }
 #skills h1:hover{
@@ -371,6 +370,8 @@ header {
     justify-content: center;
     margin: 0 auto;
 }
+
+
 .foto {
     width: 400px;
     height: 400px;
@@ -488,7 +489,7 @@ header {
 }
 .experiencia h1{
     color: #fff;
-    font-size: 60px;
+    font-size: 50px;
     margin: -40px 0px 0% 7%;
 }
 .experiencia h1:hover{
@@ -584,7 +585,7 @@ header {
     transition: 0.5s;
 }
 
-/*---------------TESTIMONIO----------------------------------*/
+
 
 
 
@@ -605,7 +606,7 @@ header {
 
 .testimonio h1{
     margin: 1% 0% 2% 5%;
-    font-size: 65px;
+    font-size: 50px;
     z-index: 1000;
     
 
@@ -717,7 +718,7 @@ header {
     
 }
 
-/* CSS */
+
 footer {
     background-color: rgba(61, 62, 66, 255);
     margin-top: 13%;
@@ -763,7 +764,7 @@ footer {
 
 .footer_contacto {
     text-align: center;
-    font-size: 75px;
+    font-size: 50px;
     margin: -115px 0px 0px 0px;
     z-index: 10000;
 }
@@ -878,5 +879,3 @@ footer {
     color: rgba(244, 193, 108, 255);
     font-size: 50px;
 }
-
-
