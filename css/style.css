@@ -8,7 +8,16 @@ body, html {
     box-sizing: border-box;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     cursor: default;
+    max-width: 100 dvh;
 }
+h1, h2, h3, h4, h5, h6{
+    text-wrap: balance;
+}
+p{
+    text-wrap: pretty;
+}
+
+
 
 header {
     background-color: rgba(52, 53, 58, 1);
@@ -172,6 +181,7 @@ header {
 .hero strong:hover{
     color: #ffc107;
     cursor: default;
+    transition: 0.9s;
 }
 .hero:hover{
     cursor: default;
@@ -260,6 +270,11 @@ header {
     color: rgba(255,255,255,255);
     font-size: 30px;
 
+}
+.descripcion:hover{
+    transform:scale(1.05);
+    transition: 0.5s;
+    
 }
 
 
@@ -498,7 +513,7 @@ header {
 .experiencia h1{
     color: #fff;
     font-size: 50px;
-    margin: -40px 0px 0% 7%;
+    margin: -30px 0px 0% 7%;
 }
 .experiencia h1:hover{
     color: #c49f31;
@@ -518,8 +533,14 @@ header {
     margin: 10px 0 5px 7%;
     font-size: 45px;
 }
+.tiempo p:hover{
+    transform:scale(1.05);
+    transition: 0.5s;
+    color: rgb(255, 243, 211);
+    
+}
 .tiempo h2:hover {
-    color: #c49f31;
+    color: #e9cb72;
     transform:scale(1.05);
     transition: 0.5s;
 }
@@ -773,9 +794,10 @@ footer {
 .footer_contacto {
     text-align: center;
     font-size: 50px;
-    margin: -115px 0px 0px 0px;
+    margin: -100px 0px 0px 0px;
     z-index: 10000;
 }
+
 
 .ultima_section {
     margin: 0% 10%;
