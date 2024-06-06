@@ -6,6 +6,8 @@ Portfolio personal
 ese es el inicio hice un logo con las inical de mi nombre (Vincenzo) y de mi apellido (Dallape)
 tambien hay 3 elementos ( contacto portfolio sobre mi) cada uno si lo cliqueas te llevara a esa seccion
 
+
+
 //HABLIDADES
 ![image](https://github.com/vichen12/portfolio/assets/159481617/aee99c3e-2a6a-4905-90d5-b521404eb5b4)
 aca se puede ver algunas habilidades que manejo en donde si pasas por arriba el cursor cambiara a pointer y tambien se agrandara el cuadro y cambiando de color 
